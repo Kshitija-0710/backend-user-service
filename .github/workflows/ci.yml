@@ -27,7 +27,7 @@ jobs:
               run: docker build -t backend-user-service:ci .
 
             - name: Run Trivy vulnerability scan
-              uses: aquasecurity/trivy-action@v0.20.0
+              uses: aquasecurity/trivy-action@0.20.0
               with:
                 image-ref: backend-user-service:ci
                 severity: CRITICAL, HIGH
